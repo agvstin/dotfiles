@@ -396,6 +396,8 @@ let g:space_no_search = 1
 
 " Solarized {{{2
 set background=dark
+set t_Co=16
+let g:solarized_termcolors=16
 colorscheme solarized
 if has("autocmd")
   " For some reason, opening a vimoutliner file switches to another
