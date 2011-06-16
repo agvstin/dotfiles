@@ -116,7 +116,7 @@ set shiftwidth=4
 set expandtab
 set hidden
 set nojoinspaces
-set listchars=tab:â–¸\ ,eol:Â¬
+set listchars=tab:¿\ ,eol:¬
 set wildmode=longest,list
 "set spelllang=en_gb
 " Put swap files in /tmp file
@@ -395,7 +395,7 @@ let g:space_disable_select_mode=1
 let g:space_no_search = 1
 
 " Solarized {{{2
-set background=light
+set background=dark
 colorscheme solarized
 if has("autocmd")
   " For some reason, opening a vimoutliner file switches to another
@@ -422,4 +422,7 @@ let g:vimwiki_menu=''
 let g:NERDMenuMode=0
 "  Modelines: {{{1
 " vim: nowrap fdm=marker
+" }}}
+" NERDTree {{{2
+	:noremap ,n :NERDTreeToggle<CR>
 " }}}
